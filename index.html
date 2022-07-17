@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./indesx.css">
+    <script src="./index.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <div class="form">
+                <form action="" onsubmit="return false">
+                    <label for="">Selectionnez un fichier
+                        <input type="file" id="file" placeholder="Parcourir">
+                        
+                    </label>
+                    
+                    <div class="input_name">
+                        <label for="" class="input_container">Nom
+                            <input type="text" id="lastname" placeholder="Nom" class="input" oninput="input_nom()">
+                            <small id="lastname_requiert"></small>
+                        </label>
+
+                        
+                        <label for="" class="input__container input__firstname_container">Prénoms
+                            <input type="text" id="firstname" placeholder="Prénoms" class="input" oninput="input_prenom()">
+                            <small id="firstname_requiert"></small>
+                        </label>
+                    </div>
+                    <div class="input_email">
+                        <label for="" class="input_container">E-mail
+                            <input type="text" id="email" placeholder="djon.do@gmail.com" class="input" oninput="input_mail()">
+                            <small id="email_requiert"></small>
+                        </label>
+                    </div>
+                    <label for="" class="checkbox_container" oninput="checkbox()">
+                        <input type="checkbox" id="disponibility">
+                        disponible
+                        
+                    </label>
+                    <div class="btn_save_container">
+                        <button id="btn_save" type="submit">Sauvegarder</button>
+                    </div>
+                </form>
+            </div>
+            <div class="profile_infos">
+                <div class="images">
+                    <img src="assets/images/mangafile.jpeg" alt="" width="250px">
+                </div>
+                <div class="fullname">
+                    <strong id="strg1">Nom</strong>
+                    <strong id="strg2">Prénoms</strong>
+                </div>
+                <div class="user_email" id="mail"> 
+                    djon.do@exemple.com
+                </div>
+                <div class="disniblity_info" id="status">
+                    <div  class="disponibility_status_img"><img src="assets/images/danger-removebg-preview.png" alt="" width="20px"></div>
+                    <div ><span class="status">Non disponible</span></div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
